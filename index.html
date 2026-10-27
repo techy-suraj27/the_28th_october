@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#13090d">
+  <meta name="description" content="A little universe made with love for MJ.">
+  <title>Our Little Universe | For MJ ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Our Little Universe home"><span class="brand-heart">♥</span> OUR LITTLE UNIVERSE</a>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" title="Toggle ambient music">♫ <span>Sound off</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A tiny universe, made for one person</p>
+        <h1>For my favourite<br><em>human, MJ.</em></h1>
+        <p class="hero-subtitle">Some people feel like home. Somehow, you became my favourite place in the whole universe.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#story">Enter our universe <span aria-hidden="true">↗</span></a>
+          <button class="button button-quiet" id="surpriseButton" type="button">A little surprise <span aria-hidden="true">♡</span></button>
+        </div>
+        <p class="hero-note">Made with love, by your Yeobo. <span>♥</span></p>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative glowing heart illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span>
+        <div class="heart-glow">♥</div>
+        <div class="hero-art-caption"><span class="caption-dot"></span> YOU + ME <span class="caption-divider">/</span> INFINITELY</div>
+        <span class="floating-word word-one">my person</span><span class="floating-word word-two">always ♡</span>
+      </div>
+      <a class="scroll-cue" href="#story"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section intro section-narrow reveal" id="story">
+      <p class="eyebrow centered">A story written in little moments</p>
+      <h2>In a universe full of stars,<br><em>I'm glad I found you.</em></h2>
+      <p class="section-lead">This isn't a perfect story. It's ours — full of little moments, random laughs, tiny misunderstandings, and a hundred reasons to choose each other again.</p>
+      <div class="date-stamp"><span>OUR STORY BEGAN</span><strong>14 <i>APR</i> 2024</strong><span>AND IT KEEPS GOING ♥</span></div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">A gallery of us</p><h2>Little moments.<br><em>Big feelings.</em></h2></div>
+        <p class="heading-side-note">18 little windows<br>into our universe.</p>
+      </div>
+      <div class="gallery-topline reveal">
+        <p>Swipe, drag, or use the arrows to wander through our memories.</p>
+        <div class="gallery-controls">
+          <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Previous photos">←</button>
+          <span class="gallery-counter"><span id="galleryCurrent">01</span> <i>/</i> 18</span>
+          <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Next photos">→</button>
+        </div>
+      </div>
+      <div class="gallery-viewport reveal" id="galleryViewport">
+        <div class="gallery-track" id="galleryTrack">
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-1.jpg -->
+              <img src="assets/memory-1.jpg" alt="The beginning of everything" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 01</b><small>Add your photo: memory-1.jpg</small></div>
+              <span class="photo-number">01 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>The beginning of everything</h3><p>One of my favourite chapters started with you.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-2.jpg -->
+              <img src="assets/memory-2.jpg" alt="Our kind of chaos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 02</b><small>Add your photo: memory-2.jpg</small></div>
+              <span class="photo-number">02 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>Our kind of chaos</h3><p>The silly moments are some of my favourite ones.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-3.jpg -->
+              <img src="assets/memory-3.jpg" alt="A day I'd replay" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 03</b><small>Add your photo: memory-3.jpg</small></div>
+              <span class="photo-number">03 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>A day I'd replay</h3><p>Some days become memories before you realise it.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-4.jpg -->
+              <img src="assets/memory-4.jpg" alt="My favourite smile" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 04</b><small>Add your photo: memory-4.jpg</small></div>
+              <span class="photo-number">04 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>My favourite smile</h3><p>A little reminder of the happiness you bring.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-5.jpg -->
+              <img src="assets/memory-5.jpg" alt="Just us being us" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 05</b><small>Add your photo: memory-5.jpg</small></div>
+              <span class="photo-number">05 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>Just us being us</h3><p>No big plan. Just a moment I want to keep.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-6.jpg -->
+              <img src="assets/memory-6.jpg" alt="The unexpected ones" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 06</b><small>Add your photo: memory-6.jpg</small></div>
+              <span class="photo-number">06 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>The unexpected ones</h3><p>The memories we never planned are special too.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-7.jpg -->
+              <img src="assets/memory-7.jpg" alt="A tiny adventure" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 07</b><small>Add your photo: memory-7.jpg</small></div>
+              <span class="photo-number">07 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>A tiny adventure</h3><p>Everywhere feels better when it's with you.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-8.jpg -->
+              <img src="assets/memory-8.jpg" alt="Our soft moments" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 08</b><small>Add your photo: memory-8.jpg</small></div>
+              <span class="photo-number">08 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>Our soft moments</h3><p>The quiet memories deserve a place here too.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-9.jpg -->
+              <img src="assets/memory-9.jpg" alt="A little bit of magic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 09</b><small>Add your photo: memory-9.jpg</small></div>
+              <span class="photo-number">09 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>A little bit of magic</h3><p>You make normal days feel a little unreal.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-10.jpg -->
+              <img src="assets/memory-10.jpg" alt="The laugh I remember" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 10</b><small>Add your photo: memory-10.jpg</small></div>
+              <span class="photo-number">10 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>The laugh I remember</h3><p>I hope we never run out of reasons to laugh.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-11.jpg -->
+              <img src="assets/memory-11.jpg" alt="My favourite view" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 11</b><small>Add your photo: memory-11.jpg</small></div>
+              <span class="photo-number">11 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>My favourite view</h3><p>A moment worth keeping close.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-12.jpg -->
+              <img src="assets/memory-12.jpg" alt="Proof of our chaos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 12</b><small>Add your photo: memory-12.jpg</small></div>
+              <span class="photo-number">12 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>Proof of our chaos</h3><p>Cute, chaotic, and completely ours.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-13.jpg -->
+              <img src="assets/memory-13.jpg" alt="A memory to keep" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 13</b><small>Add your photo: memory-13.jpg</small></div>
+              <span class="photo-number">13 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>A memory to keep</h3><p>One more reason to be grateful for us.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-14.jpg -->
+              <img src="assets/memory-14.jpg" alt="The little details" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 14</b><small>Add your photo: memory-14.jpg</small></div>
+              <span class="photo-number">14 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>The little details</h3><p>It's often the smallest things that stay.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-15.jpg -->
+              <img src="assets/memory-15.jpg" alt="A day full of us" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 15</b><small>Add your photo: memory-15.jpg</small></div>
+              <span class="photo-number">15 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>A day full of us</h3><p>A favourite day, saved in one frame.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-rose">
+              <!-- Add your photo as assets/memory-16.jpg -->
+              <img src="assets/memory-16.jpg" alt="My safe place" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>♡</span><b>MEMORY 16</b><small>Add your photo: memory-16.jpg</small></div>
+              <span class="photo-number">16 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>My safe place</h3><p>Somewhere between everything, you feel like home.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-dark">
+              <!-- Add your photo as assets/memory-17.jpg -->
+              <img src="assets/memory-17.jpg" alt="More memories ahead" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>✦</span><b>MEMORY 17</b><small>Add your photo: memory-17.jpg</small></div>
+              <span class="photo-number">17 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>More memories ahead</h3><p>The next chapter is still waiting for us.</p></div>
+          </article>
+          <article class="gallery-slide">
+            <div class="photo-frame photo-gold">
+              <!-- Add your photo as assets/memory-18.jpg -->
+              <img src="assets/memory-18.jpg" alt="To be continued..." onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder"><span>☼</span><b>MEMORY 18</b><small>Add your photo: memory-18.jpg</small></div>
+              <span class="photo-number">18 / 18</span>
+            </div>
+            <div class="memory-caption"><h3>To be continued...</h3><p>Our little universe has so much more to discover.</p></div>
+          </article>
+        </div>
+      </div>
+      <div class="gallery-progress reveal">
+        <div class="gallery-progress-track"><span id="galleryProgress"></span></div>
+        <span>OUR STORY, FRAME BY FRAME <b>♥</b></span>
+      </div>
+      <p class="edit-hint"><span>✳</span> Add up to 18 photos inside the <code>assets</code> folder, named <code>memory-1.jpg</code> through <code>memory-18.jpg</code>. Missing photos show a designed placeholder.</p>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">The little timeline</p><h2>From then<br><em>to all that comes next.</em></h2></div>
+        <p class="heading-side-note">Not just dates.<br>Little pieces of us.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-marker">♥</div><div class="timeline-date">14 APRIL 2024</div><h3>The day our story began</h3><p>Two lives, one new chapter. I didn't know all the memories we'd make, but I'm so glad we started.</p></article>
+        <article class="timeline-item reveal"><div class="timeline-marker">✦</div><div class="timeline-date">THE LITTLE THINGS</div><h3>Our own tiny language</h3><p>Inside jokes, random conversations, and you calling me “Yeobo”. Somehow, even ordinary days feel a little more ours.</p></article>
+        <article class="timeline-item reveal"><div class="timeline-marker">∞</div><div class="timeline-date">STILL BEING WRITTEN</div><h3>Our next chapters</h3><p>More photos, more adventures, more reasons to laugh — and more ordinary days that become extraordinary because they're with you.</p></article>
+      </div>
+    </section>
+
+    <section class="section reasons-section">
+      <div class="reasons-panel reveal">
+        <p class="eyebrow centered">A few things, out of a million</p>
+        <h2>Reasons I adore you,<br><em>volume one.</em></h2>
+        <p class="section-lead">Tap a heart. I put a little thought inside each one.</p>
+        <div class="reason-hearts">
+          <button class="reason-heart" type="button" data-message="You make even the most ordinary moments feel special. ♥" aria-label="Reveal a reason I love you">♥<span>01</span></button>
+          <button class="reason-heart" type="button" data-message="I love the little things about you that you probably don't even notice. ✨" aria-label="Reveal another reason I love you">♥<span>02</span></button>
+          <button class="reason-heart" type="button" data-message="Being your Yeobo is one of my favourite things. 🥹" aria-label="Reveal another reason I love you">♥<span>03</span></button>
+          <button class="reason-heart" type="button" data-message="I get to know you a little more every day, and I still want to know more. ♡" aria-label="Reveal another reason I love you">♥<span>04</span></button>
+          <button class="reason-heart" type="button" data-message="You are you. And that, MJ, is already more than enough. ❤️" aria-label="Reveal another reason I love you">♥<span>05</span></button>
+        </div>
+        <div class="reason-message" id="reasonMessage" aria-live="polite">Choose a heart to open a little note.</div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-layout">
+        <div class="letter-intro reveal"><p class="eyebrow">One last thing</p><h2>To my MJ,<br><em>with all my heart.</em></h2><p>Some things are easier to write than to say out loud. So I left you a little letter.</p></div>
+        <div class="letter-card reveal" id="letterCard">
+          <div class="letter-seal">♥</div>
+          <div class="letter-front"><span class="letter-kicker">SEALED WITH LOVE</span><h3>A letter<br>for you.</h3><p>Only open when you're ready for a little softness.</p><button class="button button-primary" id="openLetter" type="button">Open my letter <span>↗</span></button></div>
+          <div class="letter-inside" id="letterInside" hidden>
+            <p class="letter-kicker">DEAR MJ,</p>
+            <p>Happy birthday to my favourite person. ❤️</p>
+            <p>Since 14 April 2024, you've become part of so many of my favourite thoughts and moments. I love the little world we've made together — the laughs, the conversations, the silly things only we understand, and even the quiet moments.</p>
+            <p>I can't promise every day will be perfect, but I can promise that what we have matters to me. I hope this new year brings you the kind of happiness that stays, dreams that come closer, and countless reasons to smile.</p>
+            <p>Thank you for calling me Yeobo, for being you, and for being part of my story. Here's to more memories, more growth, and more chapters that are ours.</p>
+            <p class="letter-signoff">Always cheering for you,<br><em>Your Yeobo ♥</em></p>
+            <button class="text-button" id="closeLetter" type="button">Fold the letter ↗</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="birthday-finale section" id="birthday">
+      <div class="finale-sparkles" aria-hidden="true">✦　·　✧　　 ♥　　 ✦　　·　✧</div>
+      <p class="eyebrow centered reveal">28 October · Your day, your universe</p>
+      <h2 class="reveal">Happy Birthday,<br><em>my lovely MJ.</em></h2>
+      <p class="finale-copy reveal">I hope you never forget how loved you are — today, tomorrow, and on all the ordinary days in between.</p>
+      <div class="cake-wrap reveal">
+        <div class="candle"><span class="flame"></span></div>
+        <div class="cake-top"></div><div class="cake-layer cake-layer-top"></div><div class="cake-layer cake-layer-bottom"></div>
+        <div class="cake-plate"></div>
+      </div>
+      <button class="button button-primary finale-button reveal" id="celebrateButton" type="button">Make a wish, birthday girl ✨</button>
+      <p class="wish-message" id="wishMessage" aria-live="polite"></p>
+      <p class="final-signoff reveal">In every universe, I'd still look for you. <span>♥</span></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-heart">♥</span> OUR LITTLE UNIVERSE</a>
+    <p>Made for MJ, with love from her Yeobo.</p>
+    <a href="#home" class="back-top">Back to the stars ↑</a>
+  </footer>
+
+  <div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close surprise" data-close-modal>×</button>
+      <span class="modal-heart">♥</span><p class="eyebrow centered">A tiny secret</p>
+      <h2 id="modalTitle">Hey, MJ.</h2>
+      <p>In case nobody has told you today: you are someone's favourite notification, favourite thought, and favourite person to annoy. That someone is me. ❤️</p>
+      <button class="button button-primary" type="button" data-close-modal>Okay, Yeobo ♡</button>
+    </div>
+  </div>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
